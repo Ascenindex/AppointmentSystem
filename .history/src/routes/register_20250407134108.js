@@ -1,0 +1,23 @@
+import express from "express";
+import { PrismaClient } from '@prisma/client'; // não esqueça disso se ainda não importou
+
+const router = express.Router();
+
+async function createUser() {
+    const user = await prisma.user.create({
+        data: {
+            name: 'felippi',
+            email: 'elsa@prisma.io',
+            password: "felipi123"
+        },
+    });
+    return user;
+}
+
+// criar registro de usuário teste
+router.post("/", async (req, res) => {
+    const user = await createUser();
+    res.json({ user });
+});
+
+export default router;

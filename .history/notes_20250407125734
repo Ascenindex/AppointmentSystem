@@ -1,0 +1,47 @@
+# 📅 Projeto: Sistema de Agendamentos - Kanban
+
+## 🛠️ A FAZER
+
+### 🔧 Estrutura Inicial
+- [x] Criar estrutura de pastas: `src/routes`, `src/controllers`, `src/middlewares`, etc.
+- [x] Configurar `.env` com `DATABASE_URL` e `JWT_SECRET`
+- [x] Configurar servidor Express (`server.js`)
+- [x] Adicionar `"type": "module"` no `package.json`
+
+### 👤 Sistema de Usuários
+- [ ] Criar rota de **cadastro de usuário**
+- [ ] Criar rota de **login**
+- [ ] Criptografar senha com `bcryptjs`
+- [ ] Gerar token JWT ao logar
+- [ ] Criar middleware de autenticação (`authMiddleware`)
+
+### 📅 Agendamentos
+- [ ] Criar rota para **novo agendamento**
+- [ ] Listar agendamentos do usuário logado
+- [ ] Buscar agendamento por ID
+- [ ] Editar agendamento
+- [ ] Excluir agendamento
+
+### 🧠 Regras de Negócio
+- [ ] Bloquear datas no passado
+- [ ] Impedir agendamentos duplicados no mesmo horário
+- [ ] Formatar datas para leitura (ex: `12/04/2025 14:00`)
+
+### 🧰 Extras Técnicos
+- [ ] Middleware global de tratamento de erros
+- [ ] Separar lógica em `controllers` e `services`
+- [ ] Documentar rotas no README
+- [ ] Criar script `"dev"` com `nodemon`
+
+---
+
+## 🚧 EM PROGRESSO
+- [ ] Exemplo: Configurar `.env`
+- [ ] Exemplo: Criar rota de cadastro
+
+---
+
+## ✅ CONCLUÍDO
+- [x] Inicialização com `npm init`
+- [x] Instalação do `prisma`, `express`, `dotenv`, etc.
+

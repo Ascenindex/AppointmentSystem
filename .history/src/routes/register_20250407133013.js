@@ -1,0 +1,11 @@
+import express from "express";
+
+const router = express.Router();
+
+// criar registro de usuario teste
+router.post("/", (req,res)=>{
+    const user = {name, email, password}
+    
+})
+
+export default router;

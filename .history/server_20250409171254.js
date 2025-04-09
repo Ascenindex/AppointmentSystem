@@ -6,8 +6,6 @@ const server = express();
 
 dotenv.config();
 server.use(express.json())
-
-
 server.use("/", router);
 
 
